@@ -8,6 +8,9 @@
         "illuminate/database": "^6.8",
         "zendframework/zend-diactoros": "^2.2",
         "aura/router": "^3.1",
-        "phpunit/phpunit": "^8.5"
+        "phpunit/phpunit": "^8.5",
+        "twig/twig": "^3.0",
+        "respect/validation": "^1.1",
+        "vlucas/phpdotenv": "^4.1"
     }
 }
