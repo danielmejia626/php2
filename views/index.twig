@@ -31,26 +31,31 @@
       <div class="col">
         <div>
           <h3 class="border-bottom-gray" >Work Experience</h3>
-          <ul>
             {% for job in jobs %}
-              <li class="work-position">
-                <h5>{{ job.title }}</h5>
-                <p>{{ job.description }}</p>
+                <div class="row work-position">
+                    <div class="col-3">
+                        <img src="{{ job.getImage(job.title) }}" alt="" >
+                    </div>
+                    <div class="col">
+                        <h5>{{ job.title }}</h5>
+                        <p>{{ job.description }}</p>
+                    </div>
+                </div>
+
+
                 {# {% if job.logo %}
                   <p><img src="uploads/{{job.logo}}"></p>
                 {% endif %} #}
-              </li>
             {% endfor %}
-          </ul>
         </div>
         <div>
             <h3 class="border-bottom-gray">Projects</h3>
             <ul>
             <?php
-            
+
               for($idx = 0; $idx<count($projects); $idx++) {
-                
-                
+
+
                printElement($projects[$idx]);
               }
 
